@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "run"
+version = "0.1.0"
+description = ""
+authors = ["MaximGit1 <allq137x@gmail.com>"]
+readme = "README.md"
+packages = [{include = "run", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
