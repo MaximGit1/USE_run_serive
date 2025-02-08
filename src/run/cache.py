@@ -4,7 +4,7 @@ import redis.asyncio as redis
 
 from run.models import TaskRunCacheRequest
 
-redis_client = redis.from_url("redis://localhost:6379?decode_responses=True")
+redis_client = redis.from_url("redis://redis:6379?decode_responses=True")
 
 async def send_run_task(task: TaskRunCacheRequest) -> None:
     async with redis_client:
